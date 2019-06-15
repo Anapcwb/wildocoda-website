@@ -4,8 +4,8 @@
 
 /* Navbar styles*/
 
-.btn-outline-success {
-   color:black; 
+.btn-outline-secondary {
+   background-color: rgb(102, 99, 99); 
 }
 
 /* Search button */
