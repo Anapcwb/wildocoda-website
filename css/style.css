@@ -1,17 +1,33 @@
 /* AB styles */
 
-/* AB styles */
 
+
+
+
+/* APS styles */
+
+/* Body */
+
+.body {
+  padding-left: 10%;
+}
 /* Navbar styles */
 
 .btn-outline-secondary {
    background-color: rgb(102, 99, 99); 
 }
+/* Logo */
 
+.img-responsive2 {
+  display: inline-block;
+  max-width: 20%;
+  height: auto;
+}
 /* Search button styles */
 * {
    box-sizing: border-box;
  }
+
  /* Booking form styles */
 
  body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: 'Merriweather Sans', sans-serif; letter-spacing: 0px; font-size: 14px; color: #36333c; font-weight: 400; line-height: 26px; }
