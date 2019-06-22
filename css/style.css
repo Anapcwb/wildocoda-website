@@ -17,13 +17,20 @@
 }
 /* Navbar styles */
 
-
+.margin-top {
+  margin-top: 40px;
+}
 /* Logo */
 
 .img-responsive {
   display: inline-block;
-  max-width: 20%;
+  /* max-width: 20%; */
   height: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.text-justify {
+  text-align: justify;
 }
 
 /* Cards styles */
@@ -32,6 +39,9 @@
   max-height: 390px; 
 }
 
+.card.home {
+  height: 600px;
+}
  
  /* Misc visuals
  ----------------------------------*/
