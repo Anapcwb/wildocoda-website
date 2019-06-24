@@ -1,40 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
+<head>
+        <!-- Required meta tags -->
         <meta charset="utf-8">
-        <link rel="icon" href="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/styles.css" type="text/css"/>
-    </head>
+        <link rel="stylesheet" href="./css/booking.css" type="text/css"/>
+        
+        <!-- Booking CSS (I don't know what this mean!!!) RESEARCH YOUR BEAUTIFUL AND SMART GIRL -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+        <!-- Title -->
+        <title>Waldo Coda Website Contact Us</title>
+      </head>
     <body>
-        <img src="http://placekitten.com/100/100/"/>
-        <h1>Waldo Coda Tours</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="booking.html">Booking</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </nav>
+    
+ <!-- Navbar -->
+ <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
         <main>
-            <p>Please feel free to get in touch with any questions or feedback you might have</p>
-            <div class="form">
-                    <form action="contactus.php">
-                  
-                      <label for="fname">First Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="Your forename..." required>
-                  <br>
-                      <label for="lname">Last Name</label>
-                      <input type="text" id="lname" name="lastname" placeholder="Your surname..." required>
-                  <br>
-                      <label for="email">Email<span></label>
-                      <input type="text" id="email" name="email" placeholder="Your email address..." required>
-                  <br>
-                      <label for="subject">Message</label>
-                      <textarea id="subject" name="subject" placeholder="Help me help you..." style="height:200px"></textarea>
-                      <div id="submit-button"><input type="submit" value="Submit"></div>
-                  <br>
-                    </form>
+                <div class="content">
+                        <div class="container">
+                                <div class="row">
+                            
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30 text-center">
+                                                <h2>Contact Us</h2>
+                                                </div>
+                                                </div>
+                            <div class="row">
+                            
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30">
+                                                <div class="tour-booking-form">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt30">
+                                                                <h4 class="tour-form-title">Contact Us</h4>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="name">Name</label>
+                                                                    <input id="name" type="text" placeholder="First Name" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="email"> Email</label>
+                                                                    <input id="email" type="text" placeholder="xxxx@xxxx.xxx" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="phone"> Phone</label>
+                           S                                         <input id="phone" type="text" placeholder="(222) 222-2222" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="country">Country</label>
+                                                                    <input id="country" type="text" placeholder="India" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="city">City</label>
+                                                                    <input id="city" type="text" placeholder="Ahmedabad" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="textarea">Your Message Here</label>
+                                                                    <textarea class="form-control" id="textarea" name="textarea" rows="4" placeholder="Write Your Requirements"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                                <button type="submit" name="singlebutton" class="btn btn-primary">send Enquiry</button>
+                                                            </div>
+                                                        </div>
+                                                        </form>
+                                                </div>
+                                                
+                                            </div>
+                            </div>
+                                <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  text-center mt20">
+                                      Created for <a href="https://goo.gl/9e2gny" target="_blank">easetemplate</a>
+                                      </div></div>
+                        </div>
+                    </div>
                   </div>
                   <p>Follow along here:</p>
                     <a href="https://instagram.com"><img src="http://placekitten.com/100/100/"/></a>
