@@ -2,204 +2,244 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        body {
-            font-family: Arial;
-            font-size: 17px;
-            padding: 8px;
-            
-        }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: Arial;
+      font-size: 17px;
+      padding: 8px;
 
-        * {
-            box-sizing: border-box;
-        }
+    }
 
-     
-        label {
-            margin-bottom: 10px;
-            display: block;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        .icon-container {
-            margin-bottom: 20px;
-            padding: 7px 0;
-            font-size: 24px;
-        }
 
-        .billing-address{
-padding-top: 4em;
-        }
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
 
-        a {m 
-            color: #2196F3;
-        }
+    .icon-container {
+      margin-bottom: 20px;
+      padding: 7px 0;
+      font-size: 24px;
+    }
 
-        hr {
-            border: 1px solid lightgrey;
-        }
+    .billing-address {
+      padding-top: 4em;
+    }
 
-        span.price {
-            float: right;
-            color: grey;
-        }
+    a {
+      color: #2196F3;
+    }
 
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-        @media (max-width: 800px) {
-            .row {
-                flex-direction: column-reverse;
-            }
+    hr {
+      border: 1px solid lightgrey;
+    }
 
-            .col-25 {
-                margin-bottom: 20px;
-            }
-        }
-    </style>
+    span.price {
+      float: right;
+      color: grey;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column-reverse;
+      }
+
+      .col-25 {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Waldo Coda Tour</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Booking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container">
+
+
     <h2>Complete payment</h2>
 
     <div class="row">
-        <div class="col-md-9">
-            <div class="container">
-                <form class="form">
+      <div class="col-md-9">
+        <div class="container">
+          <form class="form">
 
+            <div class="row">
+
+              <div class="col-md-12">
+
+
+                <label for="fname">Accepted Methods</label>
+                <div class="icon-container">
+
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  <i class="fa fa-paypal"></i>
+
+                </div>
+
+                <ul class="nav bg-light nav-pills rounded nav-fill mb-3 col-md-6" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#nav-tab-card ">
+                      <i class="fa fa-credit-card"></i> Credit Card</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+                      <i class="fa fa-paypal"></i> PayPal</a></li>
+                </ul>
+
+
+
+                <div class="tab-content" id="paymentOptions">
+                  <div class="tab-pane fade show active" id="nav-tab-card" role="tabpanel"
+                    aria-labelledby="payment-options-PayPal">
                     <div class="row">
-                        <div class="col-md-6  billing-address">
-                            <h3>Billing Address</h3>
-                            <div class="form-group">
-                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                                <input type="text" id="fname" name="firstname" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                                <input type="text" id="email" name="email" placeholder="john@example.com"
-                                    class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                                <input type="text" id="adr" name="address" placeholder=" 75, Geffrye Street"
-                                    class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="city"><i class="fa fa-institution"></i> City</label>
-                                <input type="text" id="city" name="city" class="form-control">
-                            </div>
-
-
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <label for="state">State</label>
-                                    <input type="text" id="state" name="state" placeholder="NY" class="form-control">
-                                </div>
-
-                                <div class="col-md-6 form-group">
-                                    <label for="postcode">Postcode</label>
-                                    <input type="text" id="postcode" name="postcode" class="form-control">
-                                </div>
-                            </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="cname">Name on Card</label>
+                          <input type="text" id="cname" name="cardname" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label for="ccnum">Credit card number</label>
+                          <input type="text" id="ccnum" name="cardnumber" class="form-control">
                         </div>
 
-                        <div class="col-md-6">
-                            <h3>Payment</h3>
-
-                            <label for="fname">Accepted Methods</label>
-                            <div class="icon-container">
-
-                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
-                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
-                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
-                                    <i class="fa fa-paypal"></i>
-                            
-                                </div>
-
-                            <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
-                                    <i class="fa fa-credit-card"></i> Credit Card</a></li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
-                                    <i class="fa fa-paypal"></i> PayPal</a></li>
-                            </ul>
-                          
-
-
-                            <div class="tab-content" id="paymentOptions">
-                                <div class="tab-pane fade show active" id="nav-tab-card" role="tabpanel" aria-labelledby="payment-options-PayPal">
-
-                                    <div class="form-group">
-                                        <label for="cname">Name on Card</label>
-                                        <input type="text" id="cname" name="cardname" class="form-control"
-                                            placeholder="John More Doe">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="ccnum">Credit card number</label>
-                                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"
-                                            class="form-control">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="expmonth">Exp Month</label>
-                                        <input type="text" id="expmonth" name="expmonth" placeholder="September"
-                                            class="form-control">
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-6 form-group">
-                                            <label for="expyear">Exp Year</label>
-                                            <input type="text" id="expyear" name="expyear" placeholder="2018"
-                                                class="form-control">
-                                        </div>
-                                        <div class="col-md-6 form-group">
-                                            <label for="cvv">CVV</label>
-                                            <input type="text" id="cvv" name="cvv" placeholder="352" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="nav-tab-paypal" role="tabpanel" aria-labelledby="payment-options-PayPal">
-                                    <p>Pay through PayPal, it's the easiest way to pay online.</p>
-                                    <div class="col-sm-10">
-                                        <button type="submit" class="btn btn-primary">Log in my PayPal</button>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                          <label for="expmonth">Exp Month</label>
+                          <input type="text" id="expmonth" name="expmonth" placeholder="09" class="form-control">
                         </div>
+
+                        <div class="row">
+                          <div class="col-md-6 form-group">
+                            <label for="expyear">Exp Year</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="2018" class="form-control">
+                          </div>
+                          <div class="col-md-6 form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="352" class="form-control">
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Continue to checkout</button>
+                      </div>
+
+                      <div class="col-md-6">
+                        <h3>Billing Address</h3>
+                        <div class="form-group">
+                          <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                          <input type="text" id="fname" name="firstname" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                          <input type="text" id="adr" name="address" placeholder=" 75, Geffrye Street"
+                            class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label for="city"><i class="fa fa-institution"></i> City</label>
+                          <input type="text" id="city" name="city" class="form-control">
+                        </div>
+
+
+                        <div class="row">
+                          <div class="col-md-6 form-group">
+                            <label for="state">Country</label>
+                            <input type="text" id="state" name="state" class="form-control">
+                          </div>
+
+                          <div class="col-md-6 form-group">
+                            <label for="postcode">Postcode</label>
+                            <input type="text" id="postcode" name="postcode" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
-                    <button type="submit" class="btn btn-primary">Continue to checkout</button>
 
-                </form>
+                  </div>
+
+
+                  <div class="tab-pane fade" id="nav-tab-paypal" role="tabpanel"
+                    aria-labelledby="payment-options-PayPal">
+                    <p>Pay through PayPal, it's the easiest way to pay online.</p>
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-secondary">Log in my PayPal</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
             </div>
+
+
+
+          </form>
         </div>
-        <div class="col-md-3">
-            <div class="container">
-                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span>
-                </h4>
-                <p><a href="#"></a> <span class="price"></span></p>
-                <p><a href="#"></a> <span class="price"></span></p>
-                <p><a href="#"></a> <span class="price"></span></p>
-                <p><a href="#"></a> <span class="price"></span></p>
-                <hr>
-                <p>Total <span class="price" style="color:black"><b></b></span></p>
-            </div>
+      </div>
+      <div class="col-md-3">
+        <div class="container">
+          <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b></b></span>
+          </h4>
+          <p><a href="#"></a> <span class="price"></span></p>
+          <p><a href="#"></a> <span class="price"></span></p>
+          <p><a href="#"></a> <span class="price"></span></p>
+          <p><a href="#"></a> <span class="price"></span></p>
+          <hr>
+          <p>Total <span class="price" style="color:black"><b></b></span></p>
         </div>
+      </div>
     </div>
     <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-  crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
