@@ -3,7 +3,81 @@
   box-sizing: border-box;
 }
  
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
 
+}
+.nav-pills > li > a.active {
+background-color: grey !important;
+color: black !important;
+}
+
+#billingAddress{
+font-size: 20px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+.nav-pills > li > a:hover {
+color: black !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+.toggle-font{
+color: black;
+}
+.title {
+  padding-top: 20px;
+}
+
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.payment-form {
+  padding-top: 20px;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+.everything {
+    margin-bottom: 80px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+
+}
 /* ******************************APS styles*********************************** */
 
 /* Body */
