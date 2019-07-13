@@ -126,6 +126,15 @@ span.price {
 
 /* Footer */
 
+.createdby {
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  border-top: 1px solid lightgray;
+  padding: 5px;
+}
+
 
 /* ******************************APS styles END *********************************** */
 
