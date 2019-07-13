@@ -227,22 +227,12 @@ input[type='password']:focus {
 }
 
 
+/* Javascript Styles ALM */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.like {
+  background: #007bff;
+  color: white;
+};
 
 
 
