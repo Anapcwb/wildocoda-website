@@ -13,9 +13,30 @@
       padding: 8px;
 
     }
+    .nav-pills > li > a.active {
+  background-color: grey !important;
+  color: black !important;
+}
+
+#billingAddress{
+  font-size: 20px;
+  display: flex;
+   flex-direction: row;
+   justify-content: center;
+
+}
+.nav-pills > li > a:hover {
+  color: black !important;
+}
 
     * {
       box-sizing: border-box;
+    }
+.toggle-font{
+  color: black;
+}
+    .title {
+      padding-top: 20px;
     }
 
 
@@ -30,8 +51,8 @@
       font-size: 24px;
     }
 
-    .billing-address {
-      padding-top: 4em;
+    .payment-form {
+      padding-top: 20px;
     }
 
     a {
@@ -46,6 +67,9 @@
       float: right;
       color: grey;
     }
+    .everything {
+        margin-bottom: 80px;
+    }
 
     /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
     @media (max-width: 800px) {
@@ -56,6 +80,7 @@
       .col-25 {
         margin-bottom: 20px;
       }
+  
     }
   </style>
 </head>
@@ -94,18 +119,19 @@
   <div class="container">
 
 
-    <h2>Complete payment</h2>
+    <!-- Payment form -->
+    <h2 class="title">Complete payment</h2>
 
     <div class="row">
-      <div class="col-md-9">
-        <div class="container">
-          <form class="form">
+      <div class="col-md-9 ">
+        <div class="container payment-form ">
+          <form class="form ">
 
             <div class="row">
 
-              <div class="col-md-12">
+              <div class="col-md-12 ">
 
-
+                <!-- Payment options -->
                 <label for="fname">Accepted Methods</label>
                 <div class="icon-container">
 
@@ -117,29 +143,34 @@
 
                 </div>
 
+                <!-- Toggle -->
+
                 <ul class="nav bg-light nav-pills rounded nav-fill mb-3 col-md-6" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" data-toggle="pill" href="#nav-tab-card ">
-                      <i class="fa fa-credit-card"></i> Credit Card</a></li>
+                    <a class="nav-link active toggle-font" data-toggle="pill" href="#nav-tab-card ">
+                      <i class="fa fa-credit-card "></i> Credit Card</a></li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+                    <a class="nav-link toggle-font" data-toggle="pill" href="#nav-tab-paypal">
                       <i class="fa fa-paypal"></i> PayPal</a></li>
                 </ul>
+               
 
-
-
+                <!-- Card details -->
                 <div class="tab-content" id="paymentOptions">
                   <div class="tab-pane fade show active" id="nav-tab-card" role="tabpanel"
                     aria-labelledby="payment-options-PayPal">
+
+        
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
+                            <p id="billingAddress">Card details</p>
                           <label for="cname">Name on Card</label>
                           <input type="text" id="cname" name="cardname" class="form-control">
                         </div>
                         <div class="form-group">
                           <label for="ccnum">Credit card number</label>
-                          <input type="text" id="ccnum" name="cardnumber" class="form-control">
+                          <input type="text" id="ccnum" name="cardnumber" class=form-control">
                         </div>
 
                         <div class="form-group">
@@ -157,11 +188,17 @@
                             <input type="text" id="cvv" name="cvv" placeholder="352" class="form-control">
                           </div>
                         </div>
-                        <button type="submit" class="btn btn-secondary">Continue to checkout</button>
+
+                        <!-- Button -->
+                        <button type="submit" class="btn btn-secondary checkout-button everything">Continue to checkout</button>
                       </div>
 
-                      <div class="col-md-6">
-                        <h3>Billing Address</h3>
+
+                      <!-- Billing Address -->
+
+                      <div class="col-md-6 billing-address">
+                          <p id="billingAddress">Billing Address</p>
+
                         <div class="form-group">
                           <label for="fname"><i class="fa fa-user"></i> Full Name</label>
                           <input type="text" id="fname" name="firstname" class="form-control">
@@ -195,7 +232,7 @@
 
                   </div>
 
-
+                  <!-- PayPal -->
                   <div class="tab-pane fade" id="nav-tab-paypal" role="tabpanel"
                     aria-labelledby="payment-options-PayPal">
                     <p>Pay through PayPal, it's the easiest way to pay online.</p>
@@ -206,19 +243,16 @@
                   </div>
                 </div>
               </div>
-
-
-
             </div>
-
-
-
           </form>
         </div>
       </div>
+
+      <!-- Cart -->
+
       <div class="col-md-3">
         <div class="container">
-          <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b></b></span>
+          <h4>Your tour <span class="price" style="color:black"><i class="fa fa-map"></i> <b></b></span>
           </h4>
           <p><a href="#"></a> <span class="price"></span></p>
           <p><a href="#"></a> <span class="price"></span></p>
