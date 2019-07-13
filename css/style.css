@@ -1,8 +1,89 @@
-/* AB styles */
+/* ******************************AB styles*********************************** */
 * {
   box-sizing: border-box;
 }
  
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+
+}
+.nav-pills > li > a.active {
+background-color: grey !important;
+color: black !important;
+}
+
+#billingAddress{
+font-size: 20px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+.nav-pills > li > a:hover {
+color: black !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+.toggle-font{
+color: black;
+}
+.title {
+  padding-top: 20px;
+}
+
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.payment-form {
+  padding-top: 20px;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+.everything {
+    margin-bottom: 80px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+
+}
+
+/* ******************************AB styles END *********************************** */
+
+
+
+
 
 /* ******************************APS styles*********************************** */
 
@@ -47,493 +128,6 @@
 
 
 /* ******************************APS styles END *********************************** */
-
-
-
-
- 
- /* Misc visuals
- ----------------------------------*/
- 
- /* Corner radius */
- 
- .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { border-top-left-radius: 3px; }
- .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { border-top-right-radius: 3px; }
- .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { border-bottom-left-radius: 3px; }
- .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { border-bottom-right-radius: 3px; }
- 
- /* Overlays */
- .ui-widget-overlay { background: #aaaaaa; opacity: .3; filter: Alpha(Opacity=30);    /* support: IE8 */ }
- .ui-widget-shadow { -webkit-box-shadow: 0px 0px 5px #666666; box-shadow: 0px 0px 5px #666666; }
-
- /* Style the search field */
- form.example input[type="text"] {
-   padding: 10px;
-   font-size: 17px;
-   border: 1px solid grey;
-   float: right;
-   width: 50%;
-   background: #f1f1f1;
- }
- 
- /* Style the submit button */
- form.example button {
-   float: right;
-   width: 20%;
-   padding: 10px;
-   background: #2196f3;
-   color: white;
-   font-size: 17px;
-   border: 1px solid grey;
-   border-left: none; /* Prevent double borders */
-   cursor: pointer;
- }
- 
- form.example button:hover {
-   background: grey;
- }
- 
- /* Clear floats */
- form.example::after {
-   content: "";
-   clear: both;
-   display: table;
- }
- 
- /* Three image containers (use 25% for four, and 50% for two, etc) */
- .column {
-   float: left;
-   width: 33.33%;
-   padding: 5px;
- }
- 
- /* Clear floats after image containers */
- .row::after {
-   content: "";
-   clear: both;
-   display: table;
- }
-.checkout-panel {
-  display: flex;
-  flex-direction: column;
-  width: 940px;
-  height: 766px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
-}
-
-.panel-body {
-  padding: 45px 80px 0;
-  flex: 1;
-}
- 
-.title {
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 40px;
-  color: #2e2e2e;
-}
-
-.payment-method {
-  display: flex;
-  margin-bottom: 60px;
-  justify-content: space-between;
-}
- 
-.method {
-  display: flex;
-  flex-direction: column;
-  width: 382px;
-  height: 122px;
-  padding-top: 20px;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  background-color: rgb(249, 249, 249);
-  justify-content: center;
-  align-items: center;
-}
- 
-.card-logos {
-  display: flex;
-  width: 150px;
-  justify-content: space-between;
-  align-items: center;
-}
- 
-.radio-input {
-  margin-top: 20px;
-}
- 
-input[type='radio'] {
-  display: inline-block;
-}
-
-.input-fields {
-  display: flex;
-  justify-content: space-between;
-}
- 
-.input-fields label {
-  display: block;
-  margin-bottom: 10px;
-  color: #b4b4b4;
-}
- 
-.info {
-  font-size: 12px;
-  font-weight: 300;
-  display: block;
-  margin-top: 50px;
-  opacity: .5;
-  color: #2e2e2e;
-}
- 
-div[class*='column'] {
-  width: 382px;
-}
- 
-input[type='text'],
-input[type='password'] {
-  font-size: 16px;
-  width: 100%;
-  height: 50px;
-  padding-right: 40px;
-  padding-left: 16px;
-  color: rgba(46, 46, 46, .8);
-  border: 1px solid rgb(225, 225, 225);
-  border-radius: 4px;
-  outline: none;
-}
- 
-input[type='text']:focus,
-input[type='password']:focus {
-  border-color: rgb(119, 219, 119);
-}
- 
-#date { background: url(img/icons_calendar_black.png) no-repeat 95%; }
-#cardholder { background: url(img/icons_person_black.png) no-repeat 95%; }
-#cardnumber { background: url(img/icons_card_black.png) no-repeat 95%; }
-#verification { background: url(img/icons_lock_black.png) no-repeat 95%; }
- 
-.small-inputs {
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-between;
-}
- 
-.small-inputs div {
-  width: 182px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* AB styles */
-/* Navbar styles*/
-
-.btn-outline-success {
-  color:black; 
-}
-
-/* Search button */
-* {
-  box-sizing: border-box;
-}
-
-/* Style the search field */
-form.example input[type="text"] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: right;
-  width: 50%;
-  background: #f1f1f1;
-}
-
-/* Style the submit button */
-form.example button {
-  float: right;
-  width: 20%;
-  padding: 10px;
-  background: #2196f3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-}
-
-form.example button:hover {
-  background: grey;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* AB styles */
-* {
-  box-sizing: border-box;
-}
- 
-
-/* ******************************APS styles*********************************** */
-
-/* Body */
-.container {
-  justify-content: center;
-}
-
-.body {
-  padding-left: 10%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-/* Navbar styles */
-
-.margin-top {
-  margin-top: 40px;
-}
-/* Logo */
-
-.img-responsive {
-  display: inline-block;
-  /* max-width: 20%; */
-  height: auto;
-  border: 2px solid black;
-  border-radius: 5px;
-}
-.text-justify {
-  text-align: justify;
-}
-
-/* Cards styles */
-  
-.card.home img {
-  max-height: 390px; 
-}
-
-.card.home {
-  height: 600px;
-}
-
-/* Footer */
-
-
-/* ******************************APS styles END *********************************** */
-
-
-
-
- 
- /* Misc visuals
- ----------------------------------*/
- 
- /* Corner radius */
- 
- .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { border-top-left-radius: 3px; }
- .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { border-top-right-radius: 3px; }
- .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { border-bottom-left-radius: 3px; }
- .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { border-bottom-right-radius: 3px; }
- 
- /* Overlays */
- .ui-widget-overlay { background: #aaaaaa; opacity: .3; filter: Alpha(Opacity=30);    /* support: IE8 */ }
- .ui-widget-shadow { -webkit-box-shadow: 0px 0px 5px #666666; box-shadow: 0px 0px 5px #666666; }
-
- /* Style the search field */
- form.example input[type="text"] {
-   padding: 10px;
-   font-size: 17px;
-   border: 1px solid grey;
-   float: right;
-   width: 50%;
-   background: #f1f1f1;
- }
- 
- /* Style the submit button */
- form.example button {
-   float: right;
-   width: 20%;
-   padding: 10px;
-   background: #2196f3;
-   color: white;
-   font-size: 17px;
-   border: 1px solid grey;
-   border-left: none; /* Prevent double borders */
-   cursor: pointer;
- }
- 
- form.example button:hover {
-   background: grey;
- }
- 
- /* Clear floats */
- form.example::after {
-   content: "";
-   clear: both;
-   display: table;
- }
- 
- /* Three image containers (use 25% for four, and 50% for two, etc) */
- .column {
-   float: left;
-   width: 33.33%;
-   padding: 5px;
- }
- 
- /* Clear floats after image containers */
- .row::after {
-   content: "";
-   clear: both;
-   display: table;
- }
-.checkout-panel {
-  display: flex;
-  flex-direction: column;
-  width: 940px;
-  height: 766px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
-}
-
-.panel-body {
-  padding: 45px 80px 0;
-  flex: 1;
-}
- 
-.title {
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 40px;
-  color: #2e2e2e;
-}
-
-.payment-method {
-  display: flex;
-  margin-bottom: 60px;
-  justify-content: space-between;
-}
- 
-.method {
-  display: flex;
-  flex-direction: column;
-  width: 382px;
-  height: 122px;
-  padding-top: 20px;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  background-color: rgb(249, 249, 249);
-  justify-content: center;
-  align-items: center;
-}
- 
-.card-logos {
-  display: flex;
-  width: 150px;
-  justify-content: space-between;
-  align-items: center;
-}
- 
-.radio-input {
-  margin-top: 20px;
-}
- 
-input[type='radio'] {
-  display: inline-block;
-}
-
-.input-fields {
-  display: flex;
-  justify-content: space-between;
-}
- 
-.input-fields label {
-  display: block;
-  margin-bottom: 10px;
-  color: #b4b4b4;
-}
- 
-.info {
-  font-size: 12px;
-  font-weight: 300;
-  display: block;
-  margin-top: 50px;
-  opacity: .5;
-  color: #2e2e2e;
-}
- 
-div[class*='column'] {
-  width: 382px;
-}
- 
-input[type='text'],
-input[type='password'] {
-  font-size: 16px;
-  width: 100%;
-  height: 50px;
-  padding-right: 40px;
-  padding-left: 16px;
-  color: rgba(46, 46, 46, .8);
-  border: 1px solid rgb(225, 225, 225);
-  border-radius: 4px;
-  outline: none;
-}
- 
-input[type='text']:focus,
-input[type='password']:focus {
-  border-color: rgb(119, 219, 119);
-}
- 
-#date { background: url(img/icons_calendar_black.png) no-repeat 95%; }
-#cardholder { background: url(img/icons_person_black.png) no-repeat 95%; }
-#cardnumber { background: url(img/icons_card_black.png) no-repeat 95%; }
-#verification { background: url(img/icons_lock_black.png) no-repeat 95%; }
- 
-.small-inputs {
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-between;
-}
- 
-.small-inputs div {
-  width: 182px;
-}
-
 
 /* Javascript Styles ALM */
 
@@ -541,65 +135,3 @@ input[type='password']:focus {
   background: #007bff;
   color: white;
 };
-
-
-
-/* AB styles */
-/* Navbar styles*/
-
-.btn-outline-success {
-  color:black; 
-}
-
-/* Search button */
-* {
-  box-sizing: border-box;
-}
-
-/* Style the search field */
-form.example input[type="text"] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: right;
-  width: 50%;
-  background: #f1f1f1;
-}
-
-/* Style the submit button */
-form.example button {
-  float: right;
-  width: 20%;
-  padding: 10px;
-  background: #2196f3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-}
-
-form.example button:hover {
-  background: grey;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
