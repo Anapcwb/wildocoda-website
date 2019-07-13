@@ -99,7 +99,7 @@ span.price {
 /* Navbar styles */
 
 .margin-top {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 /* Logo */
 
@@ -109,6 +109,7 @@ span.price {
   height: auto;
   border: 2px solid black;
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 .text-justify {
   text-align: justify;
