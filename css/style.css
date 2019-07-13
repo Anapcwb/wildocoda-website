@@ -129,7 +129,9 @@ span.price {
 
 /* ******************************APS styles END *********************************** */
 
+/* Javascript Styles ALM */
 
-
-
- 
+.like {
+  background: #007bff;
+  color: white;
+};
