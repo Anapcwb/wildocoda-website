@@ -47,6 +47,10 @@ label {
   font-size: 24px;
 }
 
+.tab-pane {
+  min-height: 400px;
+}
+
 .payment-form {
   padding-top: 20px;
 }
