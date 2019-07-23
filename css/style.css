@@ -1,12 +1,12 @@
 /* ******************************AB styles*********************************** */
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
   font-family: Arial;
   font-size: 17px;
-  padding: 8px;
+  /*padding: 8px;*/
 
 }
 .nav-pills > li > a.active {
@@ -83,6 +83,10 @@ span.price {
 
 }
 
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
 /* ******************************AB styles END *********************************** */
 
 
@@ -94,11 +98,14 @@ span.price {
 /* Body */
 .container {
   justify-content: center;
+  background-color: rgba(255,255,255,0.5);
 }
 
-.body {
-  padding-left: 10%;
+body {
+  /*padding-left: 10%;*/
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url('background.jpg');
+  background-size:cover;
 }
 /* Navbar styles */
 
@@ -122,7 +129,9 @@ span.price {
 /* Cards styles */
   
 .card.home img {
-  max-height: 390px; 
+  max-height: 390px;
+  min-height: 390px;
+   object-fit: cover;
 }
 
 .card.home {
@@ -140,6 +149,17 @@ span.price {
   padding: 5px;
 }
 
+.createdby a{
+  color: #0056b3;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.padding-top {
+  padding-top: 20px;
+}
 
 /* ******************************APS styles END *********************************** */
 
@@ -149,3 +169,7 @@ span.price {
   background: #007bff;
   color: white;
 };
+
+aside {
+  opacity: 0.5;
+}
